@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	background-color: honeydew;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#tsoxa {
+	text-align:center;
+    background-image: url("images/tsoxa.png");
+    background-size: auto;
+    background-position: center;
+  	background-size: cover;
+}
+
+.game_buttons {
+    padding-top: 3%;
+    padding-bottom: 20px;
+}
+
+input#more {
+    border-radius: 10px;
+    
+}
+
+input#newGame{
+    border-radius: 10px;
+}
+
+input#stop {
+    border-radius: 10px;
+    
+}
+
+input#double {
+    border-radius: 10px;
+    
+}
+
+div#myCards {
+    padding-top: 3%;
+}
+div#motherCards {
+    padding-top: 2%;
+}
+
+h1#title {
+    color: white;
+    font-weight: bold;
+}
+
+input#myHand {
+  
+    font-size: 24px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+input#motherHand {
+    font-size: 24px;
+    text-align: center;
+}
+
+input#myBetValue {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fire {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: url('images/hell.gif') 
+                50% 50% 
+                no-repeat;
+                background-size: cover;
+}
+
+img#motherCard {
+    margin-right: 5px;
+   	animation-name: fadeInOut;
+  	animation-duration: 3s;
+  	box-shadow: 7px 7px 15px black;
+            
+}
+
+img#hiddenCard {
+    margin-right: 5px;
+    animation-name: fadeInOut;
+  	animation-duration: 3s;
+  	box-shadow: 7px 7px 15px black;
+    
+}
+
+img#myCard {
+    margin-right: 5px;
+    animation-name: fadeInOut;
+  	animation-duration: 3s;
+  	box-shadow: 7px 7px 15px black;
+}
+
+select#myBet {
+    width: auto;
+    display: unset;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+
+form#chipForm {
+    padding-top: 8%;
+    margin-left: -15%;
+}
+
+#myChips { 
+	width: 5px; 
+	height: auto; 
+	padding: 0.5em; 
+	display: contents;
+}
+
+#totalChips {
+ width: 100%; 
+ height: auto; 
+ padding: 0.5em;
+ border: dotted 2px black; 
+ min-height:70px;
+ max-height: 300px;
+}
+
+#removeChips {
+ width: 100%; 
+ height: 10%; 
+ padding: 0.5em;
+ border: dotted 2px black; 
+}
+
+.totalContainer {
+    height: 300px;
+}
+
+@media screen and (orientation: portrait)
+.ui-mobile .ui-page {
+    min-height: 100%!important; 
+}
+img {
+    vertical-align: middle;
+    width: 30px;
+    height: auto;
+}
+img#myCard, img#motherCard, img#hiddenCard  {
+    vertical-align: middle;
+    width: 70px;
+    height: auto;
+}
+
+
+.totalContainer {
+    height: auto!important;
+}
+
+*{
+  font-size:8px!important;
+}
+
+input {
+    color: white;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-weight: unset;
+    color: white;
+}
+
+form#chipForm {
+    padding-top: 0px;
+    margin-left: 0px;
+}
+
+img#chip {
+    width: 20px;
+    height:auto;
+}
+img#totalChips {
+    width: 20px;
+    height:auto;
+}
+
+input {
+    color: black;
+}
+
+input#newGame, input#stop, input#double, input#more {
+
+    font-size: 16px!important;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+
+div#message {
+    color: white;
+}
+
+

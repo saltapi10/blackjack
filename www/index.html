@@ -1,0 +1,108 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>The BlackJack 21</title>
+      <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="main.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+		<script src="jquery.ui.touch-punch.min.js"></script> -->
+      
+   </head>
+   <body>
+      <div class="fire" style="display:none;">
+      </div>
+      <div id="tsoxa">
+
+         <h1 id="title">The Original BlackJack</h1>
+
+          <form class="cardForm col-md-10" id="cardForm" name="cardForm">
+         <table class="cardtable"  id="cardTable">
+            <tr>
+               <td class="col-md-12">
+                  <label for="displayMyScore">My Money:</label><br>
+                  <input type="text" name="displayMyScore" id="displayMyScore"  disabled>
+               </td>
+                <td class="col-md-12">
+                  <label style="" for="displayMotherScore">Mother's_Money:</label><br>
+                  <input style="" type="text" name="displayMotherScore" id="displayMotherScore"  disabled>
+               </td>
+            </tr>
+         </table>
+         <label style="color:white;font-weight:bold;" for="motherHand">Mother's Hand</label><br>
+                  <input type="text" name="motherHand" id="motherHand"  disabled>
+         <div id="motherCards"">
+            
+         </div>
+         
+            <div class="game_buttons">
+        <div class="col-md-3">    	
+       <input style="font-size: 32px;" class="btn-warning" type="button" id="more" value="More"></input>
+   </div>
+   <div class="col-md-3">  
+       <input style="font-size: 32px;" class="btn-danger" type="button" id="stop" value="Stop"></input>
+   </div>
+   <div class="col-md-3">  
+       <input style="font-size: 32px;" class="btn-info" type="button" id="double" value="Double Bet"></input>
+   </div>
+<!--
+       <div class="bet" >
+       <label style="color:white;font-weight:bold;" for="myBet">Bet :</label><br>
+       <select class="form-control" id="myBet">
+         <option value="25">25 $</option>
+         <option value="50">50 $</option>
+         <option value="100">100 $</option>
+         <option value="200">200 $</option>
+         <option value="500">500 $</option>
+       </select>
+       </div>
+-->
+       <input style="font-size: 32px;" class="btn-info" type="button" id="newGame" value="New Game"></input>
+            </div>
+            <table>
+               <tbody>
+                  <tr>
+            <label style="color:white;font-weight:bold;"for="myHand">My Hand :</label>
+                  <input type="text" name="myHand" id="myHand"  disabled>
+               </tr>
+               
+               <tr>
+                  <label style="color:white;font-weight:bold;"for="myHand">My Bet :</label>
+                  <input type="text" name="myBetValue" id="myBetValue"  disabled>
+               </tr>
+               </tbody>
+            </table>
+            <div id="myCards"">
+               <!-- <img src="images/cards/2_of_clubs.png" id="myCard1" width="150" height="217" class="myCard1" />
+               <img src="images/cards/2_of_clubs.png" id="myCard2" width="150" height="217" class="myCard2" /> -->
+            </div>
+
+      </form>
+
+      <form class="chipForm col-md-2" id="chipForm" name="chipForm">
+
+<div class="totalContainer">
+            <div id="totalChips" class="" title="Place chips here!" style="pointer-events: normal;">
+            <!-- <img src="images/chip.png" id="chip" width="50" height="50" class="chip">-->
+            <div id="message">Place Your Bet Here !</div>
+            </div>
+</div>
+
+      <br><br><br>
+            <div id="myChips" class="">
+            <img src="images/chip.png" id="chip" width="50" height="50" title="100 $ Chip">
+            </div>
+            
+      </form>
+
+      </div>   
+      <!-- <script>$('#myChips').draggable();</script> -->
+      <script src="jquery-3.3.1.min.js"></script>
+      <script src="script.js"></script>
+      <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+   </body>
+   
+</html>
